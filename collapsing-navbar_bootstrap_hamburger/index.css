@@ -1,0 +1,48 @@
+.navbar {
+    padding: 0 10%;
+    /*height: 80px;*/
+    border: 30px solid #152456;
+    background-color: #152456;
+    color: white;
+}
+
+.logo {
+    width: 250px;
+    height: 40px;
+    border: 1px solid;
+    background-image: url("jefferson_logo.png");
+    background-size: 100% 100%;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 22px;
+   /* border: 2px solid;*/
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #219FD6;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: #219FD6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
