@@ -1,0 +1,35 @@
+.player {
+  border: 2px solid orange;
+}
+
+.player-video {
+  border: 6px solid green;
+}
+
+.circles {
+  width: 60%;
+  /*height: 20px;*/
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers {
+  border: 2px solid teal;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.numbers div {
+  cursor: pointer;
+}
+
+.numbers p, .numbers div {
+  padding: 5px 15px;
+  
+
+}
