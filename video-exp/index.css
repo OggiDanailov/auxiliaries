@@ -1,9 +1,15 @@
 .player {
   border: 2px solid orange;
+  width:100%;
+  height: 500px;
+  position: fixed;
 }
 
 .player-video {
   border: 6px solid green;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .circles {
@@ -29,7 +35,36 @@
 }
 
 .numbers p, .numbers div {
-  padding: 5px 15px;
-  
+  padding: 5px 15px; 
 
 }
+
+
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+ height: 0;
+  overflow: hidden;
+  border:4px solid orange;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+
+
+
+
+
+
+
