@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica Neue;
+}
+
+
+.wrapper {
+	/*border: 4px solid orange;*/
+	width: 100%;
+	position: relative;
+	background-color: #F0F0F0;
+	/*overflow: auto;*/
+}
+
+.slide-container { 
+	/*border:4px solid teal;*/
+	display: flex;
+	flex-direction: row;
+	/*position: absolute;*/
+    transform: scale(0);
+    transition: all .3s ease-in-out; 
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+
+
+}
+
+.slide-videos {
+	/*border: 2px solid yellow;*/
+	position: relative;
+	top: 100px;
+	left: -50px;
+	box-shadow: -5px 5px 5px grey;
+}
+
+.slide-text {
+	padding: 10px;
+	/*border: 2px solid purple;*/
+	min-height: 400px;
+
+}
+
+.slide-text h2 {
+	font-size: 40px;
+	font-family: Helvetica Neue;
+	font-weight: bold;
+	/*text-align: center;*/
+	margin: 80px 0 40px;
+	padding: 0 40px;
+	/*border: 2px solid;*/
+}
+.slide-text p {
+	/*text-align: center;*/
+	padding: 0 40px;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.slide-text p:last-child {
+	margin: 20px 0;
+}
+
+.blue-link {
+	color: #219FD6;
+}
+/*this is the functionality portion*/
+
+
+input[type=radio]:checked + .slide-container {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+    display: flex;
+}
+
+
+
+
+.wrapper input { display: none; }
+
+
+
+/*this is the button portion*/
+
+.bullet-wrapper {
+	width: 100%;
+	/*border: 2px solid orange;*/
+	background-color: white;
+}
+
+.slide-container-two {
+	display: flex;
+	flex-direction: row;
+	/*flex-wrap: nowrap;*/
+    width: 80%;
+    margin: 0 auto;
+    /*border: 6px solid teal;*/
+}
+
+
+.dummy {
+	/*border: 2px solid red;*/
+	height: 40px;
+	width: 50%;
+}
+
+.numbers {
+	/*border: 2px solid green;*/
+	width: 60%;
+	background-color: #ffffff;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 auto;
+}
+
+
+.nav-dots {
+	/*border: 2px solid red;*/
+	padding: 20px;
+    width: 60%;
+    height: 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px auto;
+    align-items: center;
+}
+
+ .nav-dot {
+    width: 40px;
+    font-size: 18px;
+    height: 40px;
+    /*line-height: 40px;*/
+    padding: 5px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    border: 3px solid #6C6C6C;
+    border-radius: 50%;
+    display: inline-block;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    /*background-color: salmon;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
