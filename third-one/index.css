@@ -12,13 +12,12 @@
 .wrapper input { display: none; }
 
 .internal-wrapper {
-	/*border: 2px solid purple;*/
+	border: 2px solid purple;
 	width: 80%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
 	max-height: 360px;
-
 	transform: scale(0);
     transition: all .3s ease-in-out; 
     margin: 0 auto;
@@ -30,6 +29,10 @@ input[type=radio]:checked + .internal-wrapper {
     transform: scale(1);
     transition: opacity 1s ease-in-out;
     display: flex;
+}
+
+input[type=radio]:checked + .internal-wrapper .slide-text .numbers .nav-dots label {
+	background-color: green;
 }
 
 .slide-container {
@@ -78,10 +81,12 @@ height: 100%;
 }
 
 .numbers {
-	/*border: 2px solid red;*/
+	border: 2px solid red;
 	position: absolute;
 	top: 330px;
 	margin: 30px;
+	flex-wrap: nowrap;
+	width: 100%;
 }
 
 
@@ -100,7 +105,13 @@ height: 100%;
     display: inline-block;
 	}
 
+.blue-link {
+	color: #219FD6;
+}
 
+.blue-background {
+	background-color: #219FD6 ;
+}
 
 @media all and (max-width:992px){
 	.internal-wrapper {
