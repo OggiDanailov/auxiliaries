@@ -1,73 +1,45 @@
-#carouselExampleControls {
-  border: 4px solid orange;
+*, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container-fluid {
+  /*border:4px solid orange;*/
   width: 100%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100% 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-color: green;
-}
-
-.carousel-control-next-icon:after
-{
-  /*content: '>';*/
-  font-size: 55px;
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  /*content: '<';*/
-  font-size: 55px;
-  color: red;
-}
-
-
-
-.carousel-inner {
-  border: 4px solid purple;
-  width: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.carousel-item {
-  border:4px solid blue;
-  margin: 0 100px;
-}
-
-.one, .two, .three {
-  background-image: url("asahi.png");
-  background-size: 100% 100%;
-  min-width: 200px;
-  max-width: 210px;
-  height: 200px;
-  border: 2px solid green;
-  /*margin: 20px 100px;*/
-  padding: 30px;
-}
-
-.two {
-  background-image: url("fosters.jpg");
-}
-
-.three {
-  background-image: url("tecate.png");
-}
-
-
-
-
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
   margin: auto;
+  /*height: 450px;*/
+}
+
+.text-wrapper, .footer {
+  /*border: 2px solid ;*/
+  width: 80%;
+  margin: 20px auto;
+  height: 164px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  padding: 5px;
+}
+
+.inside-wrapper {
+  /*border: 2px solid purple;*/
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  height: 200px;
 }
 
 /* Hide the images by default */
@@ -75,20 +47,60 @@
   display: none;
 }
 
+.images {
+  /*border: 2px solid teal;*/
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.image-a {
+  background-image: url("asahi.png");
+}
+.image-b {
+  background-image: url("fosters.jpg");
+}
+.image-c {
+  background-image: url("tecate.png");
+}
+.image-d {
+  background-image: url("mythos.jpg");
+}
+
+.image-e {
+  background-image: url("peroni.png");
+}
+.image-f{
+  background-image: url("jelen.jpg");
+}
+
 /* Next & previous buttons */
 .prev, .next {
+  /*border: 4px solid yellow;*/
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
+  /*width: auto;*/
+  margin-top: -71px;
   padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+.arrows {
+  color: #219FD6;
+  font-weight: 500;
+  font-size: 58px;
+  position: relative;
+}
+.l {
+  position: relative;
+  left: -15px;
+}
+
+.r {
+  position: relative;
+  right: -15px;
 }
 
 /* Position the "next button" to the right */
@@ -96,68 +108,119 @@
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev {
+  left: 0;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.blue-class {
+  color: #219FD6;
+}
+
+.footer {
+  height: auto;
+}
+
+.footer p {
+  font-size: 16px;
+  font-weight: bold;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+
+@media all and (min-width: 992px){
+  body {
+    background-color: aqua;
+  }
+  .inside-wrapper {
+    border: 2px solid purple;
+  }
+
+  .mySlides, .images {
+    border:2px solid white;
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+  }
+
+  .text {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+
+------------------------------------------------
+
+.container,  .row {
+  border: 2px solid purple;
+  padding: 5px;
+  margin-bottom: 150px;
+}
+
+.col-md-12 {
+  border: 2px solid green;
+}
+
+#theCarousel {
+  border:3px solid orange;
+}
+
+/*.carousel-inner {
+  border: 3px dotted black;
+  padding: 2px;
+}*/
+
+/*.carousel-item {
+    transition: 500ms ease-in-out left;
+    border: 3px solid teal;
+    background-color: salmon;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.carousel-item img {
+  border: 6px solid blue;
+  width: 200px;
+  height: 200px;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  margin: 0px 20px;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active & .left {
+  left: -33%;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.left, .right {
+  border: 22px solid white;
+  color: black;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.right {
+  margin-left: 90%;
+}*/
+
+/*.next{
+  border: 2px solid;
+  left: 33%;
 }
+.prev{
+  left: -33%;
+}*/
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+/*@media all and (transform-3d), (-webkit-transform-3d) {
+       .carousel-item{
+
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
 }
-
-
-
+  
+.carousel-control .left {
+  background-image: none;
+}*/
 
 
 
