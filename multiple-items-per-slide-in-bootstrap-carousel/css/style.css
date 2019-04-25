@@ -1,17 +1,17 @@
-.multi-item-carousel .carousel-inner > .item {
+/*.multi-item-carousel .carousel-inner > .item {
   transition: 500ms ease-in-out left;
 }
 .multi-item-carousel .carousel-inner .active.left {
-  left: -33%;
+  left: -25%;
 }
 .multi-item-carousel .carousel-inner .active.right {
-  left: 33%;
+  left: 25%;
 }
 .multi-item-carousel .carousel-inner .next {
-  left: 33%;
+  left: 25%;
 }
 .multi-item-carousel .carousel-inner .prev {
-  left: -33%;
+  left: -25%;
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
   .multi-item-carousel .carousel-inner > .item {
@@ -39,3 +39,4 @@ h1 {
   margin-bottom: 2em;
   text-shadow: 0px 2px 0px #000000;
 }
+*/

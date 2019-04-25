@@ -1,0 +1,55 @@
+.numbers  {
+	width: 200px;
+	height: 100px;
+	border: 2px solid;
+	margin: 5px;
+	display: inline-block;
+}
+
+.slider {
+	display: flex;
+	flex-direction: row;
+	border: 2px solid orange;
+	margin: 20px auto;
+	width: 80%;
+}
+
+@media all and (min-width: 992px){
+	/*body {
+		background-color: aqua;
+	}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+button { font-size: 20px; }
+
+.grid {
+  width: 125px;
+  background: #DDD;
+  height: 125px;
+  float: left;
+  margin-right: 20px;
+}
+
+.grid-item {
+  width: 90%;
+  height: 120px;
+  margin: 0 auto;
+  background: #09F;
+  transition: transform 0.4s;
+}
+
+.grid-item.is-moved {
+  transform: translateX(145px);
+}

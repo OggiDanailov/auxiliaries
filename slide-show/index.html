@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 
 
 </head>
@@ -17,92 +19,50 @@
         <p class="text">We offer individual therapies and comprehensive programs, centered on your unique health needs and goals.</p>
     </div>
 
-  <div class='inside-wrapper'>
+  <div class='inside-wrapper' id='lightSlider'>
 
-    <div class="mySlides">
-      <div class='images image-a'></div>
-    </div>
+      <div class="mySlides">
+        <div class='images image-a'></div>
+      </div>
 
-    <div class="mySlides">
-      <div class='images image-b'></div>
-    </div>
+      <div class="mySlides">
+        <div class='images image-b'></div>
+      </div>
 
-    <div class="mySlides">
-      <div class='images image-c'></div>
-    </div>
+      <div class="mySlides">
+        <div class='images image-c'></div>
+      </div>
 
-    <div class="mySlides">
-      <div class='images image-d'></div>
-    </div>
+      <div class="mySlides">
+        <div class='images image-d'></div>
+      </div>
 
-    <div class="mySlides">
-      <div class='images image-e'></div>
-    </div>
+      <div class="mySlides">
+        <div class='images image-e'></div>
+      </div>
 
-    <div class="mySlides">
-      <div class='images image-f'></div>
-    </div>
-  <!-- Next and previous buttons
-    <a class="prev" onclick="plusSlides(-1)"><span class='arrows l'>&#10094;</span></a>
-    <a class="next" onclick="plusSlides(1)"><span class='arrows r'>&#10095;</span></a>
-  </div> <!-- end of inside wrapper -->
+      <div class="mySlides">
+        <div class='images image-f'></div>
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1)"><span class='arrows l'>&#10094;</span></a>
+      <a class="next" onclick="plusSlides(1)"><span class='arrows r'>&#10095;</span></a>
+      
+  </div>  <!-- end of inside wrapper -->
+
+
   <footer class='footer'>
     <p>Not sure which one is for you? </p>
       <p><span class='blue-class'>Learn more about our Services.</span></p>
   </footer>
-</div> --> <!-- end of container -->
-
-<br>
-<hr>
-<br>
-<hr>
-<br>
-
-<div class="container">
-  <h1>Use Bootstrap's carousel to show multiple items per slide.</h1>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="carousel slide multi-item-carousel" id="theCarousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/200/f44336/000000" class="img-fluid"></a></div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/200/e91e63/000000" class="img-fluid"></a></div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/200/9c27b0/000000" class="img-fluid"></a></div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/200/673ab7/000000" class="img-fluid"></a></div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/200/4caf50/000000" class="img-fluid"></a></div>
-          </div>
-          <div class="carousel-item">
-            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/200/8bc34a/000000" class="img-fluid"></a></div>
-          </div>
-          <!-- add  more items here -->
-          <!-- Example item start:  -->
-          
-          <div class="carousel-item">
-            <div class="col-xs-3"><a href="#1"><img src="http://placehold.it/200/8bc34a/000000" class="img-fluid"></a></div>
-          </div>
-          
-          <!--  Example item end -->
-        </div>
-        <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="fas fa-angle-left"></i>
-
-        <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="fas fa-angle-right"></i></a>
-
-      </div> <!-- end of #theCarousel -->
-    </div> <!-- end of col-md-12 -->
-  </div> <!-- end of row -->
 </div> <!-- end of container -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src='index.js'></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src='js/lightslider.js'></script>
+<script type="text/javascript" src='js/index.js'></script>
 </body>
 </html>
