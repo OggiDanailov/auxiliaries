@@ -1,0 +1,779 @@
+nav.skcc-global-nav {
+    /*background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(125,185,232,0) 90%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(125,185,232,0) 90%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(125,185,232,0) 90%);*/
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+    border:4px solid orange;
+    /*width: 90%;
+    margin: 0 auto;*/
+}
+nav.skcc-global-nav .container{
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: default;
+    border:2px solid purple;
+    /*height: 2000px;*/
+}
+
+nav.skcc-global-nav,
+nav.skcc-global-nav .container {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    max-width: 2000px;
+
+}
+nav.skcc-global-nav {
+    height: 125px;
+    border-top: 8px solid black;
+}
+nav.skcc-global-nav .mobile-nav-branding {
+    display:none;
+}
+
+nav.skcc-global-nav .logo {
+    width: 125px;
+    float: left;
+    pointer-events: all;
+    margin-top: -8px;
+    border-top: 8px solid #1B2A59;
+}
+nav.skcc-global-nav .logo-img {
+    width: 100%;
+    position: relative;
+}
+
+nav.skcc-global-nav #menu {
+    display:none;
+    pointer-events: all;
+}
+nav.skcc-global-nav .nav-bar {
+    pointer-events: all;
+}
+nav.skcc-global-nav .main-nav li a span{
+    padding: 0 20px;
+    margin: 0;
+    line-height: 18px;
+    border-right: 1px solid rgba(228,224,225,0.5);
+}
+
+nav.skcc-global-nav li a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+nav.skcc-global-nav .nav-menu-item-icon {
+    display: none;
+}
+
+.portal-login {
+    cursor: pointer;
+    background: none;
+    border: 0;
+    width: 35px;
+}
+
+.portal-login img {
+   height: 16px;
+   width: 16px;
+}
+
+nav.skcc-global-nav .main-nav {
+    float: right;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+nav.skcc-global-nav .home {
+	width: 40px;
+}
+nav.skcc-global-nav .home a {
+	border-right: 1px solid rgba(228,224,225,0.5);
+}
+nav.skcc-global-nav .home img {
+    height: 18px;
+    width: 16px;
+    padding-bottom: 2px;
+}
+nav.skcc-global-nav .main-nav li.active {
+    background: -moz-linear-gradient(top, rgba(36,167,223,0.5) 0%, rgba(125,185,232,0) 90%);
+    background: -webkit-linear-gradient(top, rgba(36,167,223,0.5) 0%,rgba(125,185,232,0) 90%);
+    background: linear-gradient(to bottom, rgba(36,167,223,0.5) 0%,rgba(125,185,232,0) 90%);
+}
+
+nav.skcc-global-nav .main-nav li.active a {
+    font-weight: 600;
+}
+.portal-login .login-text {
+    display:none;
+}
+div#MyChartLoginPanel {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 9999;
+    height: 100vh;
+    cursor: default;
+}
+div#MyChartLoginPanel .input-group {
+    width: 100%;
+}
+div#MyChartLoginPanel .login-container {
+    background-color: rgba(0,0,0,0.8);
+    width: 80%;
+    min-width: 550px;
+    max-width: 800px;
+    margin: auto;
+    left: 0;
+    position: relative;
+    border-radius: 0 0 80px 80px;
+    cursor:default;
+    padding-bottom: 60px;
+}
+
+
+div#MyChartLoginPanel .close {
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 25px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    opacity: 1;
+}
+
+div#MyChartLoginPanel .inner-container {
+    max-width: 350px;
+    margin: auto;
+    padding-top: 60px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+div#MyChartLoginPanel .inner-container>p {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 200;
+    line-height: 56px;
+    margin: 20px 0 15px 0;    
+}
+
+div#MyChartLoginPanel img{
+    max-width: 150px;
+    margin: 10px 0 20px 0;
+}
+
+div#MyChartLoginPanel .inner-container .MyChartInput {
+    /* Visually hide, but keep 'technically' visible for accessibility */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+div#MyChartLoginPanel div.MyChartFormField {
+    text-align: right;
+    width: 100% !important;
+    margin: 10px 0;
+}
+
+div#MyChartLoginPanel div.MyChartFormField input.field {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    float: none;
+    font-size: 1.0em;
+    height: 50px;
+    padding: 0;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+
+div#MyChartLoginPanel .skcc-button {
+    width: 100%;
+}
+
+div#MyChartLoginPanel div.MyChartFormField input::placeholder {
+    color: #000;
+    font-weight: 300;
+    opacity: 1;
+}
+
+div#MyChartLoginPanel div.MyChartFormField input:-ms-input-placeholder,
+div#MyChartLoginPanel div.MyChartFormField input::-ms-input-placeholder {
+    color: #000;
+    font-weight: 300;
+}
+
+div#MyChartLoginPanel div.MyChartFormField a
+{
+    font-style: normal;
+    text-align: right;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 85%;
+}
+
+div#MyChartLoginPanel div.MyChartFormField .loginhint,
+div#MyChartLoginPanel div.MyChartFormField .loginhint a {
+    color: #fff;
+    text-align: right;
+}
+
+.jeffnow-phone,
+.jeffnow-phone:visited,
+.jeffnow-phone:active,
+.jeffnow-phone:hover,
+.jeffnow-phone:link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 42px;
+}
+
+.logo .jefferson-pillars {
+    position: absolute;
+    top: -108px;
+    width: 125px;
+    min-height: 260px;
+    -webkit-transition: top 1s;
+    -o-transition: top 1s;
+    transition: top 1s;
+    z-index: -1;
+    display: none;
+}
+
+.logo .jefferson-pillars .pillar-links {
+    background-color: rgba(0,0,0,0.65);
+    text-align: center;
+    padding: 60px 0 15px 0;
+}
+
+.logo .logo-dropdown img {
+    width: 13px;
+    height: 10px;
+    margin: 0 auto;
+    -webkit-filter: brightness(400%) grayscale(100%);
+    filter: brightness(400%) grayscale(100%);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+}
+.logo .jefferson-pillars.open {
+    top: 70px;
+    -webkit-transition: top 1s;
+    -o-transition: top 1s;
+    transition: top 1s;
+}
+.logo .open .logo-dropdown img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+}
+
+.logo .jefferson-pillars a,
+.logo .jefferson-pillars a:active,
+.logo .jefferson-pillars a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 10px;
+    display: block;
+    text-shadow: 0 0 3px #000;
+}
+.logo .jefferson-pillars a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: none;
+}
+.logo .logo-dropdown {
+    border: 0;
+    background: none;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;    
+    width: 100%;
+    bottom: 0;
+    -webkit-transition: bottom 1s;
+    -o-transition: bottom 1s;
+    transition: bottom 1s;
+}
+.logo .open .logo-dropdown {
+    bottom: 25px;
+    -webkit-transition: bottom 1s;
+    -o-transition: bottom 1s;
+    transition: bottom 1s;
+}
+.jefferson-pillars .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 14px solid rgba(0,0,0,0.65);
+    border-right: 63px solid transparent;
+}
+.jefferson-pillars .triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 14px solid rgba(0,0,0,0.65);
+    border-left: 62px solid transparent;
+}
+.jefferson-pillars .ribbon-shape {
+    display: flex;
+    width: 100%;
+}
+.jefferson-pillars .ribbon-shape>div {
+    flex:1;
+}
+nav.skcc-global-nav .logo .hide-overflow {
+    height: 125px;
+    width: 125px;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    pointer-events: none;
+}
+.logo .jefferson-pillars .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 0 7px;
+    border-color: #efefef transparent transparent transparent;
+    margin: 0 auto;
+    pointer-events: none;
+    -webkit-transition: -webkit-transform 600ms ease-in;
+    transition: -webkit-transform 600ms ease-in;
+    -o-transition: transform 600ms ease-in;
+    transition: transform 600ms ease-in;
+    transition: transform 600ms ease-in, -webkit-transform 600ms ease-in;
+    -webkit-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    transform-origin: 50% 20%;
+}
+.logo .jefferson-pillars.open .triangle {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* Safari only */
+@media not all and (min-resolution:.001dpcm) { @media {
+    nav.skcc-global-nav li a {
+        font-weight: 300;
+    }
+}}
+@media (min-width: 768px) {
+    .logo .jefferson-pillars:hover {
+        top: 70px;
+        -webkit-transition: top 1s;
+        -o-transition: top 1s;
+        transition: top 1s;
+    }
+    .logo .jefferson-pillars:hover .logo-dropdown {
+        bottom: 25px;
+    }
+    .logo .jefferson-pillars:hover .triangle {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+	nav.skcc-global-nav .logo {
+	    margin-top: -133px;
+	}
+    .portal-login {
+        float: right;
+        padding: 0;
+    }
+    .portal-login>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 60px;
+        padding: 0;
+        align-items: flex-end;
+    }
+	nav.skcc-global-nav .main-nav li {
+	    float: left;
+	    height: 60px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+}
+@media (min-width: 768px) and (max-height: 780px) {
+    div#MyChartLoginPanel {
+        position: fixed;
+        height: 100vh;
+    }
+    div#MyChartLoginPanel .login-container {
+        border-radius: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 100%;
+        max-width: 775px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    div#MyChartLoginPanel .inner-container {
+        max-width: 430px;
+        margin-top: 0;
+        padding-top: 0;
+        height: 100%;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+	nav.skcc-global-nav .main-nav li.home {
+		display: none;
+	}
+    nav.skcc-global-nav {
+        pointer-events: all;
+    }
+    nav.skcc-global-nav .container {
+        height: auto;
+        overflow: visible;
+    }
+    nav.skcc-global-nav,
+    nav.skcc-global-nav .container {
+        position: absolute;
+        z-index: 999;
+    }
+    nav.skcc-global-nav #menu {
+        display: block;
+    }
+    nav.skcc-global-nav div, 
+    nav.skcc-global-nav ul, 
+    nav.skcc-global-nav li {
+        float: none !important;
+    }
+    nav.skcc-global-nav .mobile-nav-branding {
+        display:inline-block;
+        float:left;
+    }
+    nav.skcc-global-nav .mobile-nav-branding.skcc {
+        position: absolute;
+        top: 0;
+        display: block;
+        font-size: 24px;
+        line-height: 26px;
+        margin-top: 20px;
+    }
+    nav.skcc-global-nav .mobile-nav-branding.tel {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    nav.skcc-global-nav .mobile-nav-branding.tel p {
+        font-size: 30px;
+    }
+    nav.skcc-global-nav .mobile-nav-branding {
+        font-size: 30px;
+        line-height: 32px;
+        color: #fff;
+    }
+    nav.skcc-global-nav .main-nav li a span {
+        border-right: none;
+        font-weight: 300;
+        padding: 0;
+    }
+    nav.skcc-global-nav .main-nav li.active a span {
+        font-weight: 500;
+    }
+    nav.skcc-global-nav .main-nav li a{
+        font-size: 24px;
+        padding: 12px 0;
+    	line-height: 1;
+        border-bottom: 2px solid rgba(228,224,225,0.5);
+    }
+    nav.skcc-global-nav .nav-menu-item-icon {
+        display: block;
+        float: right;
+        max-height: 30px;
+        max-width: 30px;
+        margin: -5px -5px 0 0;
+    }
+    .portal-login>div {
+        display: flex;
+        align-items: center;
+    }
+    .portal-login img {
+        height: 22px;
+        width: 22px;
+        margin: 0;
+        order: 2;
+    }
+    .portal-login {
+        padding: 15px 0;
+        background-image: linear-gradient(to right, rgba(228,224,225,0.5) 33%, rgba(255,255,255,0) 0%);
+        background-position: bottom;
+        background-size: 8px 2px;
+        background-repeat: repeat-x;
+        text-align: left;
+        width: 100%;
+    }
+    .portal-login.open {
+        background: none;
+    }
+    .portal-login.open .login-text {
+        display: none;
+    }
+    .portal-login .login-text {
+        color: #fff;
+        display: inline-block;
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        padding: 0;
+        order: 1;
+    	flex: 1;
+    }
+    div#MyChartLoginPanel {
+        width: auto;
+        height: auto;
+        position: fixed;
+        top: 100px;
+        left: 15%;
+        right: 20px;
+    }
+    div#MyChartLoginPanel .login-container {
+        background-color: rgba(0,0,0,0);
+        width: auto;
+        min-width: auto;
+        margin: auto;
+        height: auto;
+        border-radius: 0;
+        padding-bottom: 0;
+    }
+    div#MyChartLoginPanel .close {
+        display:none;
+    }
+    div#MyChartLoginPanel .hide-on-mobile {
+        display: none;
+    }
+    div#MyChartLoginPanel .inner-container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    nav.skcc-global-nav .nav-bar{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 90%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.82);
+        padding: 100px 50px 0 50px;
+        display: none;
+        overflow-y: auto;
+    }
+    nav.skcc-global-nav .nav-bar.open{
+        display: block!important;
+    }
+
+    nav.skcc-global-nav .main-nav li.active {
+        background: none;
+    }
+
+    nav.skcc-global-nav .main-nav li.active a{
+        color: #24A7DF;
+    }
+    nav.skcc-global-nav .menu.open {
+        position: fixed;
+    }
+    nav.skcc-global-nav .menu {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        z-index: 9000;
+    }
+    
+    nav.skcc-global-nav .menu span.line {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    nav.skcc-global-nav .menu span.line:nth-child(1) {
+      top: 0px;
+    }
+    
+    nav.skcc-global-nav .menu span.line:nth-child(2),
+    nav.skcc-global-nav .menu span.line:nth-child(3) {
+      top: 13px;
+    }
+    
+    nav.skcc-global-nav .menu span.line:nth-child(4) {
+      top: 26px;
+    }
+    
+    nav.skcc-global-nav .menu.open span.line:nth-child(1) {
+      top: 10px;
+      width: 0%;
+      left: 50%;
+    }
+    
+    nav.skcc-global-nav .menu.open span.line:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    
+    nav.skcc-global-nav .menu.open span.line:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    nav.skcc-global-nav .menu.open span.line:nth-child(4) {
+      top: 10px;
+      width: 0%;
+      left: 50%;
+    }
+    div#MyChartLoginPanel .login-container {
+        min-height: auto;
+    }
+    .portal-login.open {
+        display:none;
+    }
+    #skcc-typeahead-form .typeahead__query {
+        z-index: 0;
+    }
+    .jeffnow-phone,
+    .jeffnow-phone:visited,
+    .jeffnow-phone:active,
+    .jeffnow-phone:hover,
+    .jeffnow-phone:link {
+        font-size: 24px;
+    }
+    nav.skcc-global-nav .logo {
+	    margin-top: -141px;
+	}
+    .portal-login.open+ul+div {
+        display:none;
+    }
+    .logo .logo-dropdown {
+        justify-content: center;
+    }
+}
+@media (max-width: 480px) {
+	nav.skcc-global-nav .logo,
+	.logo .jefferson-pillars {
+	    width: 100px;
+	}
+    .jefferson-pillars .triangle-left {
+        border-right: 50px solid transparent;
+    }
+    .jefferson-pillars .triangle-right {
+        border-left: 50px solid transparent;
+    }
+    .logo .jefferson-pillars.open {
+	    top: 50px;
+	}
+	.logo .open .logo-dropdown {
+	    bottom: 0;
+	}
+	.logo .jefferson-pillars {
+	    min-height: 230px;
+	}
+	.logo .jefferson-pillars a, 
+	.logo .jefferson-pillars a:active, 
+	.logo .jefferson-pillars a:visited {
+	    font-size: 10px;
+	    padding: 7px 10px;
+	}
+}
+@media (max-width: 340px) {
+    nav.skcc-global-nav .nav-bar {
+        padding: 90px 20px 0 20px;
+        width: 100%;
+    }
+
+    .portal-login .login-text,
+    nav.skcc-global-nav .nav-bar p, 
+    nav.skcc-global-nav .nav-bar .main-nav li a,
+    .jeffnow-phone,
+    .jeffnow-phone:visited,
+    .jeffnow-phone:active,
+    .jeffnow-phone:hover,
+    .jeffnow-phone:link {
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    nav.skcc-global-nav .mobile-nav-branding {
+        margin-top: 15px;
+    }
+    nav.skcc-global-nav .mobile-nav-branding.tel p {
+        font-size: 10vw;
+    }
+    div#MyChartLoginPanel {
+        left: 20px;
+    }
+
+    /*.logo .jefferson-pillars {
+        display: none!important;
+    }*/
+}

@@ -18,12 +18,10 @@
 .slides input { display: none; }
 
 .slide-container { 
-	display: block; 
-	
+	display: block; 	
 }
 
 .slide {
-
     top: 0;
     opacity: 0;
     width: 600px;
@@ -52,11 +50,9 @@ input:checked + .slide-container  .slide {
 	border: 2px solid green;
 	padding: 10px;
     width: 60%;
-
     height: 11px;
     display: block;
     margin: 20px auto;
-
     text-align: center;
 }
 

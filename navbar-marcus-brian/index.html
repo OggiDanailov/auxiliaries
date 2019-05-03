@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<nav class="skcc-global-nav">
+    <div class="container">
+        <div class="logo">
+            <div class="hide-overflow"></div>
+            <div class="jefferson-pillars">
+                <div class="pillar-links">
+                    <a href="https://www.jefferson.edu/" target="_blank">University</a>
+                    <a href="https://www.jeffersonhealth.org/index.html" target="_blank">Health</a>
+                    <a href="https://innovation.jefferson.edu/" target="_blank">Innovation</a>
+                    <a href="https://giving.jefferson.edu/giving.html" target="_blank">Philanthropy</a>
+                </div>
+                <div class="ribbon-shape">
+                    <div class="triangle-left"></div>
+                    <div class="triangle-right"></div>
+                </div>
+                <button type="button" title="Jefferson links" aria-label="Toggle opening of Jefferson pillar links" class="logo-dropdown">
+                    <div class="triangle"></div>
+                    <span class="off-screen">Toggle Jefferson pillar links</span>
+                </button>
+            </div>
+            <a href="/content/skcc/index.html"><img class="logo-img" src="jefferson-ribbon.png" alt="Jefferson Health logo"></a>
+        </div>
+        <button id="menu" class="menu no-style" type="button" aria-pressed="false">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="off-screen">Menu</span>
+        </button>
+        <div class="nav-bar">
+            <div class="mobile-nav-branding skcc">
+                <p>Sidney Kimmel <br><strong>Cancer Center</strong></p>
+            </div>
+            <button class="portal-login" role="button" aria-pressed="false" tabindex="0">
+                <div>
+                    <img alt="Login icon" src="/apps/skcc/clientlibs/icons/skcc-icon-login.svg"/>
+                    <div class="login-text">Log in</div>
+                </div>
+            </button>
+            <ul class="main-nav">
+                <li class="home"><a href="/content/skcc/index.html" title="Home"><img src="/apps/skcc/clientlibs/icons/skcc-icon-home.svg" alt="" /><span class="off-screen">Home</span></a></li>
+                <sly data-sly-list.item="${nav.items}">
+                    <li class="${(item.path == nav.highlighted) ? 'active' : '' }" data-sly-test="${!item.hideInNav}">
+                        <a href="${ item.path @ extension = 'html'}"><span>${item.properties.navTitle || item.title || item.name}</span><img data-sly-test="${item.properties.navIcon}" class="nav-menu-item-icon" src="${item.properties.navIcon}" alt="${item.properties.navTitle || item.title || item.name} icon"/></a>
+                    </li>
+                </sly>
+            </ul>
+            <div class="mobile-nav-branding tel">
+                <p><a class="jeffnow-phone" href="tel:+1-800-533-3669">1-800-<strong>JEFFNOW</strong></a></p>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src='index.js'></script>
+</body>
+</html>
