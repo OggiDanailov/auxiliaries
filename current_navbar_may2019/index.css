@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.line {
+	width: 100%;
+	height: 8px;
+	background-color: black;
+	position: relative;
+	z-index: 999;
+}
+.container {
+	width: 100%;
+	height: 200px;
+	background-color: teal;
+/*	position: fixed;
+	z-index: 999;*/
+}
+
+.image {
+	width: 140px;
+	height: 160px;
+	position: relative;
+	left: 100px;
+	background-image: url("jefferson-ribbon.png");
+	background-size: 100% 100%;
+	z-index: 10;
+}
+
+.hidden-menu {
+    background: transparent;
+	border-top: 10px solid rgba(0,0,0,0.65);
+	z-index: 3;
+	width: 130px;
+	/*height: 240px;*/
+	position: absolute;
+	top: -50px;
+	left: 105px;
+	 -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -o-transition: top 1s;
+    transition: top 1s; 
+}
+
+.hidden-menu ul {
+	background-color: rgba(0,0,0,0.65);
+	color: white;
+	border: 1px solid transparent;
+
+}
+.hidden-menu li {
+	list-style-type: none;
+	margin: 20px auto 20px;
+	text-align: center;
+}
+.hidden-menu ul li:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.triangles {
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid rgba(0,0,0,0.65);
+}
+
+#triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 20px solid rgba(0,0,0,0.65);
+  border-right: 65px solid transparent;
+}
+
+ #triangle-topright {
+      width: 0;
+      height: 0;
+      border-top: 20px solid rgba(0,0,0,0.65);
+      border-left: 65px solid transparent;
+    }
+
+
+
+.arrow-box {
+	/*border: 2px solid yellow;*/
+	width: 40px;
+	height: 30px;
+	margin: 40px auto 0;
+
+}
+
+.arrow {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid black;
+  border-bottom: 0;
+  width: 0;
+  height: 0;
+  display: block;
+  -webkit-transition:border-top 500ms ease-out;
+    -moz-transition: border-top 500ms ease-out;
+    -o-transition: border-top 500ms ease-out;
+    transition: border-top 500ms ease-out;
+
+    -webkit-transition:border-bottom 500ms ease-out;
+    -moz-transition: border-bottom 500ms ease-out;
+    -o-transition: border-bottom 500ms ease-out;
+    transition: border-bottom 500ms ease-out;  
+}
+
+/*.arrow-down {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid black;
+  width: 0;
+  height: 0;
+  display: none;
+}*/
+
+.hidden-menu:hover {
+	top: 140px;
+}
+.hidden-menu:hover  .arrow {
+	border-top: 0;
+	border-bottom: 20px solid black;
+}
+
+
+#el1, #el2, #el3 {
+ border: 2px solid #000; 
+ width: 100px; 
+ height: 30px; 
+ margin: 10px; 
+ position: relative; 
+ background-color: #FFF; 
+}
+
+

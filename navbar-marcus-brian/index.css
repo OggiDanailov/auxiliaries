@@ -1,20 +1,19 @@
-nav.skcc-global-nav {
-    /*background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(125,185,232,0) 90%);
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(125,185,232,0) 90%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(125,185,232,0) 90%);*/
+nav.skcc-global-nav {    
     width: 100%;
     z-index: 1;
     pointer-events: none;
     border:4px solid orange;
-    /*width: 90%;
-    margin: 0 auto;*/
+    background-color: salmon;
+    width: 90%;
+    margin: 0 auto;
 }
 nav.skcc-global-nav .container{
     left: 0;
     right: 0;
     margin: auto;
     cursor: default;
-    border:2px solid purple;
+    border:2px solid teal;
+    width: 80%;
     /*height: 2000px;*/
 }
 
@@ -24,12 +23,14 @@ nav.skcc-global-nav .container {
     position: fixed;
     top: 0;
     max-width: 2000px;
-
+    border: 4px dotted black;
 }
+
 nav.skcc-global-nav {
     height: 125px;
     border-top: 8px solid black;
 }
+
 nav.skcc-global-nav .mobile-nav-branding {
     display:none;
 }
@@ -41,6 +42,7 @@ nav.skcc-global-nav .logo {
     margin-top: -8px;
     border-top: 8px solid #1B2A59;
 }
+
 nav.skcc-global-nav .logo-img {
     width: 100%;
     position: relative;
@@ -266,6 +268,13 @@ div#MyChartLoginPanel div.MyChartFormField .loginhint a {
     transition: top 1s;
     z-index: -1;
     display: none;
+}
+
+.jefferson-pillars {
+    border:3px solid yellow;
+}
+.pillar-links {
+    border: 3px solid green;
 }
 
 .logo .jefferson-pillars .pillar-links {
@@ -592,6 +601,12 @@ nav.skcc-global-nav .logo .hide-overflow {
     div#MyChartLoginPanel .inner-container {
         padding-top: 0;
         padding-bottom: 0;
+    }
+
+    .nav-bar {
+        border:3px solid green;
+        width: 300px;
+        height: 200px;
     }
     nav.skcc-global-nav .nav-bar{
         position: fixed;
