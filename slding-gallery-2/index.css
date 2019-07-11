@@ -1,0 +1,179 @@
+/*.wrapper {
+	border: 2px solid orange;
+	width: 100%;
+	margin: auto;
+}
+
+.carousel {
+	border: 2px solid purple;
+	width: 80%;
+	margin: 20px auto;
+	display:flex;
+	flex-direction: row;
+}
+
+.left, .right {
+	border: 2px solid;
+	width: 50px;
+	height: 300px;
+}
+.left {
+	align-self: flex-start;
+}
+
+.right {
+	align-self: flex-end;
+}
+
+.left:hover, .right:hover {
+	background-color: salmon;
+	cursor: pointer;
+}
+
+.screen {
+	border: 2px solid teal;
+	width: 50%;
+	margin: 0 auto;
+	height: 300px;
+}
+
+#img-screen {
+	border: 2px solid;
+	margin: 0 auto;
+}
+
+
+*/
+
+
+/*end of normal carousel*/
+
+
+
+.carousel {
+	border:2px solid purple;
+	width: 90%;
+	display: -webkit-box;
+  display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	/*height: 400px;*/
+}
+
+.slider {
+	border: 2px solid aqua;
+	/*/*display: -webkit-box;*/
+  /*display: -ms-flexbox;*/*/
+	display: flex;
+	flex-direction: row;
+	margin: 20px auto;
+	width: 70%;
+	height: 202px;
+	align-items: center;
+	justify-content: center;
+}
+
+.arrows {
+	border: 2px solid blue;
+	width: 50px;
+	height: auto;
+	/*margin:0px 20px;*/
+	cursor: pointer;
+}
+
+.prev, .next {
+	/*border: 2px solid;*/
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+}
+
+
+.prev {
+	background-image: url("/etc.clientlibs/marcus2019/components/structure/carousel/clientlibs/resources/img/icons/arrow-left.svg");
+}
+
+.next {
+	position: relative;
+	left: 25px;
+	background-image: url("/etc.clientlibs/marcus2019/components/structure/carousel/clientlibs/resources/img/icons/arrow-right.svg");
+}
+
+.wrapper-pictograms  {
+	/*border: 2px solid red;*/
+	/*position: relative;
+	top: 30px;*/
+	width: 275px;
+	margin: 5px;
+	padding: 10px 0;
+	display: flex;
+	display: -webkit-box;
+  display: -ms-flexbox;
+	flex-direction: column;
+}
+
+.image {
+	/*border: 1px solid salmon;*/
+	height: 54px;
+	margin-bottom: 5px;
+	/*max-height: 100%;*/
+	width: 100px;
+	margin: auto;
+}
+
+.image-text {
+	/*border:1px solid green;*/
+	/*height: 50px;*/
+	/*width: 90%;*/
+	margin: 0 auto;
+	text-align: center;
+}
+
+.image-text p {
+	/*border: 5px solid yellow;*/
+	color: #219FD6;
+	font-size: 22px;
+	font-weight: bold;
+	font-stretch: condensed;
+}
+.image {
+	background-size: 100% 100%;
+	}
+
+
+.executive {
+	background-image: url("images/executive-health.svg");
+}
+
+.mri {
+	background-image: url("images/mri-pet-imaging.svg");
+}
+
+.accelerated {
+	background-image: url("images/accelerated-healing.svg");
+}
+.micronutrient {
+	background-image: url("images/micronutrient-therapies.svg");
+}
+
+.hormone {
+	background-image: url("images/hormone-replacement.svg");	
+}
+
+.functional {
+	background-image: url("images/functional-medicine.svg");
+}
+
+.optimal {
+	background-image: url("images/optimal-weight.svg");
+
+}
+
+.mind-body {
+	background-image: url("images/mind-body-therapies.svg");
+}
+
+.academic {
+	background-image: url("images/academic-and-clinical-trials.svg");
+}

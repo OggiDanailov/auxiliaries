@@ -32,6 +32,7 @@
 
 .burger {
     /*border: 2px solid;*/
+    background-color: lightgreen;
     position: relative;
     top: -10px;
     width: 50px;

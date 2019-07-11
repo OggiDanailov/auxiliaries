@@ -1,0 +1,242 @@
+*, p , div, h1, h2, h3, h4, h5, h6 {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+.wrapper {
+	width: 100%;
+	/*border:3px solid orange;*/
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #F0F0F0;
+
+}
+.meet-physicians-inside-wrapper {
+	max-width: 1280px;
+	padding:0px 50px;
+	margin: 0 auto;
+}
+
+.meet-header-title {
+  /*border:3px solid teal;*/
+  /*width: 50%;*/
+  /*height: 200px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+ 
+.meet-header-title h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.meet-header-title  p {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+ .meet-header-button {
+ 	/*border:2px solid teal;*/
+  width: 50%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+
+}
+  
+.physicians-button {
+	width: 380px;
+	height: 70px;
+  border: 5px solid #219FD6;
+  border-radius: 40px;
+ 	background-color: #F0F0F0;
+  text-align: center;
+  color: #219FD6;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+.meet-header-button button a {
+	text-decoration: none;
+	color: #219FD6;
+	padding: 21px 72px;
+}
+
+.meet-header-button button:hover {
+  background-color: #219FD6;
+}
+
+.meet-header-button button:hover > a {
+  color: white;
+} 
+
+
+.box-wrapper {
+	width: 50%;
+	margin: 5px;
+	/*border: 1px dotted teal;*/
+}
+
+.box {
+	/*height: 100px;*/
+	/*border: 2px solid;*/
+	margin: 2px 0px;
+}
+
+.invisible {
+	background-color: lightblue;
+	/*height: 100px;*/
+	display: none;
+}
+
+.column-wrapper {
+/*		display: flex;
+		flex-direction: column;*/
+	}
+
+.physicians-flexbox {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 40px;
+	}
+
+
+	.doctors-text-image-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.doctors-image {
+		width: 150px;
+		height: 160px;
+	}
+
+	.doctors-text {
+		width: 300px;
+		margin-left: 5px;
+	}
+	.invisible {
+		margin-left: 150px;
+	}
+
+	.doctors-text h3{
+		font-weight: bold;
+		font-size: 28px;
+	}
+	.doctors-text p {
+		font-size: 20px;		
+		margin-top: 20px;
+	}
+
+	.read-more, .read-less {
+		color: #219FD6;
+		cursor: pointer;
+	}
+	.bold {
+		font-weight: bold;
+	}
+
+@media all and (max-width: 991px){
+
+	.meet-physicians-inside-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .physicians-flexbox {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+	}
+
+  .meet-header-title {
+    /*border: 2px solid red;*/
+    align-self: flex-start;
+    width: 300px;
+    justify-content: center;
+    margin: 30px auto;
+  }
+
+  .meet-header-title h3 {
+    /*border: 1px solid orange;*/
+    font-size: 28px;
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+    /*text-align: left;*/
+  }
+
+  .meet-header-title  p {
+    font-size: 20px;
+  } 
+
+  .meet-header-button {
+    /*border: 3px solid teal;*/
+    width: 300px;
+    margin: 0px auto;
+    height: auto;
+
+  }
+  .meet-header-button button a {
+  	padding: 0;
+  	font-size: 20px;
+
+  }
+
+  .physicians-button {
+  	border: 3px solid #219FD6;
+  	margin-left: 0;
+  }
+
+  .physicians-flexbox {
+  	border: 2px solid salmon;
+  	margin: 0;
+  }
+
+  .box-wrapper {
+    border: 2px solid teal;
+    min-height: 160px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    /*align-items: center;*/
+  }
+
+  .doctors-image {
+  	width: 90px;
+  }
+
+  .doctors-image img {
+  	width: 90px;
+  	height: 90px;
+  }
+
+  .doctors-text {
+		width: 190px;
+		margin-left: 5px;
+	}
+
+	.doctors-text h3 {
+		font-size: 16px;
+	}
+
+	.doctors-text p{
+		font-size: 12px;
+	}
+
+}	
+
+
+
+
+
+
+
