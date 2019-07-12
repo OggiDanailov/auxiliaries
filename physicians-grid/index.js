@@ -9,7 +9,10 @@ var seeAll = document.getElementsByClassName('arrow-down')[0];
 
 for(let i = 0;i<readMore.length;i++){
 	readMore[i].addEventListener("click", function(){
-		invisible[i].style.display = 'block'
+		invisible[i].style.display = 'block';
+		invisible[i].style.marginTop = '-10px';
+
+		readMore[i].style.display = 'none'
 	})	
 }
 
