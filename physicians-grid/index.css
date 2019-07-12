@@ -5,6 +5,50 @@
 }
 
 
+.arrow-up-down-wrapper {
+  /*border: 2px solid green;*/
+  display: none;
+  width: 50%;
+  margin: auto;
+}
+
+.arrow-down, .arrow-up {
+  margin: 10px auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.arrow-down {
+  display: none;
+}
+
+.arrow-up {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.arrow-img-up {
+  transform: rotate(180deg)
+}
+
+.arrow-down p, .arrow-up p {
+  color: #219FD6;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.arrow-up p {
+  margin-top: 10px;
+}
+
+
+.invisible-mobile {
+	display: block;
+}
+
+
+
 .wrapper {
 	width: 100%;
 	/*border:3px solid orange;*/
@@ -90,7 +134,7 @@
 }
 
 .invisible {
-	background-color: lightblue;
+	/*background-color: lightblue;*/
 	/*height: 100px;*/
 	display: none;
 }
@@ -142,7 +186,25 @@
 		font-weight: bold;
 	}
 
-@media all and (max-width: 991px){
+
+@media all and (max-width: 992px){
+
+	
+
+  .arrow-up-down-wrapper {
+    display: block;
+  }
+
+  .arrow-down {
+  	/*border: 4px solid maroon;*/
+    display: block;
+  }
+  .arrow-up {
+  	display: none;
+  }
+  
+
+
 
 	.meet-physicians-inside-wrapper {
     width: 100%;
@@ -181,7 +243,7 @@
   .meet-header-button {
     /*border: 3px solid teal;*/
     width: 300px;
-    margin: 0px auto;
+    margin: 0px auto 40px;
     height: auto;
 
   }
@@ -197,21 +259,31 @@
   }
 
   .physicians-flexbox {
-  	border: 2px solid salmon;
+  	/*border: 2px solid salmon;*/
   	margin: 0;
   }
 
   .box-wrapper {
-    border: 2px solid teal;
-    min-height: 160px;
-    width: 90%;
+    /*border: 2px solid teal;*/
+    /*min-height: 160px;*/
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     /*align-items: center;*/
   }
 
+  .invisible-mobile {
+		display: none;
+	}
+
+  .doctors-text-image-wrapper {
+  	margin-bottom: 20px;
+  }
+
   .doctors-image {
   	width: 90px;
+  	height: 90px;
   }
 
   .doctors-image img {
@@ -231,6 +303,16 @@
 	.doctors-text p{
 		font-size: 12px;
 	}
+
+	.invisible {
+		/*border: 3px solid gold;*/
+		margin-left: 90px;
+	}
+
+	.mobile-hidden-visible {
+	display: block;
+}
+
 
 }	
 
